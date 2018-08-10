@@ -9,8 +9,7 @@ function deleteFromObjectByKey(a, b) {
     return newRecipes}
 function destructivelyDeleteFromObjectByKey(a, b) {
     delete a[b]; return a}
-//
-var recipes = {prop: 1};
+
 updateObjectWithKeyAndValue(recipes, prop2, 2);
 destructivelyUpdateObjectWithKeyAndValue(recipes, prop, "prop: 1, prop2: 2");
 deleteFromObjectByKey(recipes, prop);
