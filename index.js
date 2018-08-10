@@ -1,4 +1,4 @@
-
+// Functions
 function updateObjectWithKeyAndValue(a, b, c) { 
     return Object.assign({}, a, { [b]:c } ) }
 function destructivelyUpdateObjectWithKeyAndValue(a, b, c) {
