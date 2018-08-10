@@ -3,7 +3,7 @@ function updateObjectWithKeyAndValue(a, b, c) { return Object.assign({}, a, { [b
 function destructivelyUpdateObjectWithKeyAndValue(a, b, c) {a[b] = c; return a}
 function deleteFromObjectByKey(a, b) {
   var newRecipes = Object.assign({}, recipes);
-  delete a[b]; 
+  delete newRecipes[b]; 
   return newRecipes}
 function destructivelyDeleteFromObjectByKey(a, b) {delete a[b]; return a}
 updateObjectWithKeyAndValue(recipes, prop2, 2);
